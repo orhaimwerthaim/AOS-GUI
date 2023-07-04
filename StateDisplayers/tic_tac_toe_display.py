@@ -8,9 +8,9 @@ def display(state, filename = None,is_merging_images = False):
     # Fill the board with X's and O's based on the grid array
     for i in range(3):
         for j in range(3):
-            if grid[i * 3 + j] == 1:
+            if grid[i * 3 + j] == 2:
                 board[i][j] = 'X'
-            elif grid[i * 3 + j] == 2:
+            elif grid[i * 3 + j] == 1:
                 board[i][j] = 'O'
 
     # Plot the tic tac toe board
